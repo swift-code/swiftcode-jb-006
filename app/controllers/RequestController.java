@@ -10,7 +10,7 @@ import play.mvc.Result;
  */
 public class RequestController extends Controller {
     public Result sendRequest(Long senderId,Long receiverId){
-        if(senderId == null || receiverId == null || User.find.byId(senderId)== null || User.find.byId(receiverId)==null) {
+        if(senderId == null | receiverId == null | User.find.byId(senderId)== null | User.find.byId(receiverId)==null) {
 
             return ok();
         }
@@ -42,4 +42,4 @@ public class RequestController extends Controller {
     }
 
 
-}
+
