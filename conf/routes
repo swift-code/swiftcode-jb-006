@@ -9,5 +9,5 @@ POST    /login                                  controllers.Application.login()
 POST    /signup                                 controllers.Application.signup()
 
 GET     /profile/:id                            controllers.HomeController.getProfile(id: Long)
-POST    /request/send/:senderId/:receiverId     controllers.RequestController.sendRequest(senderId: Long,receivedId: Long)
+POST    /request/send/:senderId/:receiverId     controllers.RequestController.sendRequest(senderId: Long,receiverId: Long)
 POST    /request/accept/:requestId              controllers.RequestController.acceptRequest(requestId: Long)
